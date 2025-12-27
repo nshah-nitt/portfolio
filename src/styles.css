@@ -2,7 +2,16 @@
 
 /* 
     Font size --- choose from the defaiult font size
-        14px 16px 18px 20px 24px 36px 48px 60px  
+       | Purpose       | Tailwind    |
+        | ------------- | ----------- |
+        | Small text    | `text-sm`   |
+        | Body          | `text-base` |
+        | Body large    | `text-lg`   |
+        | Section intro | `text-xl`   |
+        | H3            | `text-2xl`  |
+        | H2            | `text-4xl`  |
+        | Hero heading  | `text-6xl`  |
+ 
 */
 
 /**
@@ -15,4 +24,46 @@
 /**
     Font weights
     body : 400
+    emphasis: 500
+    heading: 600
+    hero/cta: 700
 /*
+
+/**
+    Neutral (UI backbone)
+
+    Background: white
+    Text primary: gray-900
+    Text secondary: gray-600
+
+    Borders: gray-200
+    Muted bg: gray-50
+
+    Accent (ONLY ONE)
+
+    indigo-600 → primary
+    indigo-500 → hover
+    indigo-100 → subtle backgrounds
+*/
+
+/**
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 
+           text-sm font-semibold transition-all duration-300 
+           focus-visible:outline-none focus-visible:ring-2 
+           cursor-pointer;
+  }
+}

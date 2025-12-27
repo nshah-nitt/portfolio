@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naman Shah</title>
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header class="border-b border-gray-200">
+        <div class="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
+            <p class="font-semibold text-base text-gray-900">
+                Naman <span class="text-indigo-500">Shah</span>
+            </p>
+
+            <nav>
+                <ul class="flex items-center gap-6">
+                    <li>
+                        <a href="#"
+                            class="cursor-pointer text-sm font-medium text-gray-600 visited:text-gray-600 hover:text-indigo-500 active:text-indigo-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="cursor-pointer text-sm font-medium text-gray-600 visited:text-gray-600 hover:text-indigo-500 active:text-indigo-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="cursor-pointer text-sm font-medium text-gray-600 visited:text-gray-600 hover:text-indigo-500 active:text-indigo-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="cursor-pointer text-sm font-medium text-gray-600 visited:text-gray-600 hover:text-indigo-500 active:text-indigo-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="mx-auto max-w-6xl grid grid-cols-2 min-h-[70vh] px-6 mt-12">
+        <!-- Text -->
+        <section class="flex flex-col justify-center gap-6">
+            <p class="text-6xl font-bold tracking-tight leading-[1.1] max-w-xl">
+                Building clean, scalable frontend systems for modern web applications.
+            </p>
+
+            <p class="text-lg text-gray-600 max-w-xl leading-relaxed">
+                Frontend engineer with experience in React, Angular, and modern CSS architecture.
+                I focus on building maintainable UI systems, performance-conscious applications,
+                and clean developer experiences.
+            </p>
+
+            <!-- Action Button-->
+            <div class="flex items-center gap-4 mt-4">
+                <div class="flex items-center gap-4">
+                    <a href="mailto:snamanshah@gmail.com"
+                        class="btn bg-indigo-600 text-white hover:bg-indigo-500 active:scale-95 focus-visible:ring-indigo-500 shadow-md">
+                        Contact Me
+                    </a>
+
+                    <a href="/path-to-your-resume.pdf"
+                        class="btn border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 active:scale-95 focus-visible:ring-gray-300">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image -->
+        <section class="flex items-center justify-center">
+            <div class="relative">
+                <div class="absolute inset-0 rounded-full bg-indigo-100 blur-2xl"></div>
+                <img src="./static/naman_shah.jpg" alt="Naman Shah"
+                    class="relative w-64 h-64 rounded-full object-cover ring-4 ring-white shadow-xl" />
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
