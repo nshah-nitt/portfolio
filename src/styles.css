@@ -66,4 +66,20 @@
            focus-visible:outline-none focus-visible:ring-2 
            cursor-pointer;
   }
+
+  .skill {
+    @apply px-3 py-1 text-sm bg-gray-100 rounded;
+  }
+  .skill-primary {
+    @apply px-3 py-1 text-sm bg-indigo-50 text-indigo-700 rounded;
+  }
+  .skill-card {
+    @apply border border-gray-200 rounded-lg p-6;
+  }
+  .skill-title {
+    @apply font-semibold mb-4;
+  }
+  .skill-group {
+    @apply flex flex-wrap gap-2;
+  }
 }
